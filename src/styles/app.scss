@@ -1,0 +1,16 @@
+$main-color: #17152c;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $main-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+}
