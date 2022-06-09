@@ -1,0 +1,55 @@
+$base-color: #17152c;
+$main-color: #FFF;
+
+.config-center {
+    display: flex;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: $main-color;
+    margin-right: 20px;
+    &:hover>p{
+        opacity: 1;
+    }
+}
+
+#configIcon {
+    margin-top: 15px;
+    cursor: pointer;   
+}
+
+.config-center p {
+    opacity: 0;
+    font-size: 20px;
+    transition: opacity 0.3s;
+}
+
+.config-page {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $main-color;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+
+.config-title {
+    font-size: 18px;
+}
+
+.socialLink-manager div input{
+    background-color: $base-color;
+    border: none;
+    color: $main-color;
+    font-size: 15px;
+}
+
+.socialLink-manager div ul {
+    list-style: none;
+    padding: 0;
+}
+
+.socialLink-manager div ul li {
+    padding-bottom: 10px;
+}
