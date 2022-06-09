@@ -1,0 +1,38 @@
+$base-color: #17152c;
+$main-color: #FFF;
+
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-list li {
+    font-size: 17px;
+    font-weight: bold;
+    border: solid 3px $main-color;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 385px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        background-color: $main-color;
+    }
+    &:hover > a {
+        color: $base-color;
+    }
+}
+
+.social-list li .social-icon {
+    font-size: 25px;
+    float: left;
+}
+
+.social-list li a {
+    text-decoration: none;
+    color: $main-color;
+    &:hover{
+        color: $base-color;
+    }
+}
