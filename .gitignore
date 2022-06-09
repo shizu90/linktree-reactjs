@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+app.css
+app.css.map
+config.css
+config.css.map
+linktreeHeader.css
+linktreeHeader.css.map
+socialList.css
+socialList.css.map
