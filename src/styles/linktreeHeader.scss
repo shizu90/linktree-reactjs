@@ -1,0 +1,12 @@
+$base-color: #17152c;
+$main-color: #FFF;
+
+.linktree-header .profile-img img{
+    width: 175px;
+    border-radius: 100%;
+}
+
+.linktree-header .profile-info p{
+    font-size: 20px;
+    color: $main-color;
+}
