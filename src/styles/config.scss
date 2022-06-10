@@ -31,6 +31,7 @@ $main-color: #FFF;
     height: 300px;
     position: absolute;
     right: 0;
+    transition: display 0.3s ease;
 }
 
 .config-title {
@@ -51,4 +52,11 @@ $main-color: #FFF;
 
 .socialLink-manager div ul li {
     padding-bottom: 10px;
+}
+
+.change-propic input {
+    background-color: $base-color;
+    border: none;
+    color: #FFF;
+    font-size: 15px;
 }
