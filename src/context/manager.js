@@ -4,5 +4,7 @@ export const ManagerContext = createContext({
     data: {},
     setData: () => {},
     user: '',
-    setUser: () => {}
+    setUser: () => {},
+    img: '',
+    setImg: () => {},
 })
