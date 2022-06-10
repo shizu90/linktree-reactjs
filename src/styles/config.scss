@@ -26,12 +26,11 @@ $main-color: #FFF;
 }
 
 .config-page {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     color: $main-color;
     height: 300px;
     position: absolute;
     right: 0;
-    opacity: 0;
 }
 
 .config-title {
