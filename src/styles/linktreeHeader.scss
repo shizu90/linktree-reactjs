@@ -3,6 +3,8 @@ $main-color: #FFF;
 
 .linktree-header .profile-img img{
     width: 175px;
+    height: 175px;
+    object-fit: cover;
     border-radius: 100%;
 }
 
