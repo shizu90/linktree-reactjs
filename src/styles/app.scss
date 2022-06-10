@@ -1,10 +1,16 @@
-$main-color: #17152c;
+$dark-blue: #0c0b1d;
+$light-blue: #160e2e;
+$blue: #081436;
 
 body {
     margin: 0;
     padding: 0;
-    background-color: $main-color;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, $dark-blue, $light-blue, $blue);
+    background-size: 300% 300%;
     font-family: 'Roboto', sans-serif;
+    animation: colors 10s ease infinite;
 }
 
 .centered {
@@ -13,4 +19,16 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 5%;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
