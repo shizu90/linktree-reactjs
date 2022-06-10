@@ -7,7 +7,7 @@ import { useState } from "react";
 function App() {
   const [user, setUser] = useState('')
   const [data, setData] = useState({})
-  const [list, setList] = useState([])
+  const [img, setImg] = useState('')
 
   const setMedia = (media) => {
     setData(media)
@@ -17,14 +17,14 @@ function App() {
     setUser(name)
   }
 
-  const setSocialList = (list) => {
-    setList(list)
+  const setImage = (img) => {
+    setImg(img)
   }
-  
+
 
   return (
     <div className="centered">
-      <ManagerContext.Provider value={{data, setMedia, user, setName}}>
+      <ManagerContext.Provider value={{data, setMedia, user, setName, img, setImage}}>
         <div>
           <LinktreeHeader></LinktreeHeader>
           <SocialList></SocialList>
