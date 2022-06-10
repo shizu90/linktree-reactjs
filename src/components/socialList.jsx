@@ -2,11 +2,10 @@ import React, { useContext } from "react";
 import { SocialItem } from "./socialItem";
 import '../styles/socialList.css'
 import {ManagerContext} from '../context/manager'
-import {FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaPinterestSquare, FaPlayCircle, FaFilm, FaTwitterSquare, FaSteamSquare} from 'react-icons/fa'
+import {FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaGamepad, FaPlayCircle, FaFilm, FaTwitterSquare} from 'react-icons/fa'
 
 export const SocialList = (props) => {
     const context = useContext(ManagerContext)
-    const availableIcons = ['Facebook', 'Twitter', 'Pinterest', 'Instagram', 'Github', 'Steam']
     const socialMedias = [<SocialItem 
         socialMedia = "Facebook" 
         icon = {<FaFacebookSquare className="social-icon"></FaFacebookSquare>}
@@ -31,7 +30,11 @@ export const SocialList = (props) => {
         <SocialItem 
         socialMedia = "Letterboxd" 
         icon = {<FaFilm className="social-icon"></FaFilm>}
-        url = "https://letterboxd.com/gabriell9090/"></SocialItem>]
+        url = "https://letterboxd.com/gabriell9090/"></SocialItem>,
+        <SocialItem 
+        socialMedia = "Backloggd" 
+        icon = {<FaGamepad className="social-icon"></FaGamepad>}
+        url = "https://www.backloggd.com/u/gumiya90/"></SocialItem>]
     
     const addSocialLink = (context) => {
         if(Object.entries(context.data).length > 0){
