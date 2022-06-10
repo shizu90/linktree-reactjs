@@ -32,6 +32,10 @@ export const Config = () => {
         }
     }
 
+    const manageImage = (imagePath) => {
+        context.setImage(imagePath)
+    }
+
     const manageSocialLink = (action, media, url = '') => {
         if(media.length > 0){
             if(action === 'add'){
@@ -55,11 +59,11 @@ export const Config = () => {
                     <p className="config-title">
                         Change profile picture: 
                     </p>
-                    <input type="file"></input>
+                    <input type="text" placeholder = "Image URL" onChange={(e) => manageImage(e.target.value)}></input>
                     <p className="config-title">
                         Change username: 
                     </p>
-                    <input type="text" onChange={(e) => {manageUsername(e.target.value)}}></input> 
+                    <input type="text" placeholder="Type username" onChange={(e) => {manageUsername(e.target.value)}}></input> 
                 </div>
                 <div className="socialLink-manager">
                     <p className="config-title">
